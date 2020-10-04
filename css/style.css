@@ -1,0 +1,340 @@
+/*
+
+--------------------colors-------------------
+#0652DD   Blue Main titles
+#1e90ff   Light blue
+#08376B   Logo Dark blue
+#1663f1   Logo Normal blue
+*/
+
+
+*{
+    padding: 0px;
+    margin: 0px;
+}
+h1, h2, h3{
+    color: #1663f1;
+}
+.navbar-brand, .nav-item a, .navbar h2 {
+    color: #1663f1;
+}
+.navbar-brand{
+    padding: 0px;
+}
+.navbar{
+    box-shadow: 0px 0px 10px rgba(0,0,0,0.5);
+    position: sticky;
+    top: 0px;
+    width: 100%;
+    justify-content: flex-start;
+    z-index: 1000;
+    background-color: white;
+}
+.logo{
+    width: 140px;
+    height: 70px;
+}
+.navCntnt a{
+    font-size: 24px;
+}
+.navCntnt a:hover{
+    color: #0440af
+}
+.navCntnt-sm{
+    display: none;
+}
+.navCntnt-toggle{
+    background-color: #1663f1;
+    color: white;
+    font-size: 20px;
+}
+.navCntnt-toggle:hover{
+    color: white
+}
+.navCntnt-toggle::after{
+    content: none
+}
+form{
+    display: block;
+    align-items: center;
+    margin-left: auto;
+}
+.navbar form i{
+    position: relative;
+    right: 25px;
+    color: #1663f1;
+    position: relative;
+    color: #0984e3;
+    right: 30px;
+    top:3px;
+    cursor: pointer;
+    padding: 5px;
+    float: left;
+}
+.navbar form input{
+    width: 220px;
+    height: 30px;
+    border: 1px solid black;
+    padding: 10px;
+    float: left;
+    margin-left: 20px;
+}
+form input:focus, form input:active,form textarea:focus, form textarea:active{
+    outline: none;
+    background-color: white;
+}
+
+
+.container-fluid{
+    padding: 0px;
+}
+.background{
+    background-image: url(../images/pexels-andreas-l-3626111.jpg);
+    background-position: center;
+}
+header{
+    height:572px;
+    padding-top: 200px;
+    background-color: rgba(0,0,0,0.5);
+}
+header div{
+    margin: auto;
+    display: block;
+    width: fit-content;
+}
+header a .btn:first-of-type{
+    margin-right: 50px
+}
+header .btn{
+    background-color: #28a745;
+    color: white;
+    display: block;
+    border: 2px solid #28a745;
+    font-size: 24px;
+    float: left;
+    margin-top:50px
+}
+header h1{
+    color: white;
+    text-align: center;
+    text-shadow: 0px 0px 15px rgba(0,0,0,0.5);
+}
+header .btn:hover{
+    color: #28a745;
+    background-color: white;
+}
+
+
+.work{
+    margin:auto;
+    margin-bottom: 50px;
+}
+.work h1, .contact-us h1{
+    text-align: center;
+    margin-top: 50px;
+    margin-bottom: 30px;
+}
+.card{
+    text-align: center;
+}
+.card img{
+    width:90px;
+    height:90px;
+}
+.card .card-body{
+    padding: 0px;
+}
+.card-container{
+    margin-top: 20px;
+}
+.carousel-inner{
+    padding: 0px;
+}
+.carousel-inner{
+    padding: 0px;
+}
+.activites .carousel-item img{
+    height:500px;
+    width:70%;
+}
+.trapozoid{
+    border-bottom: 500px solid #1663f1;
+    border-right: 0px solid transparent;
+    border-left: 250px solid transparent;
+    width: 50%;
+    position: absolute;
+    bottom: 500px;
+    left: 50%;
+    top: 0;
+}
+.carousel-caption {
+    top: 40%;
+    left: 66vw;
+}
+.carousel-indicators li {
+    background-color: #000;
+}
+@media(max-width:567px){
+    .trapozoid{
+        display: none;
+    }
+    .activites .carousel-item img{
+        height:400px;
+        width:100%;
+    }
+    .carousel-caption {
+        right: 0;
+        left: 0;
+        width: 100%;
+        top:50%;
+        background-color: rgba(0,0,0, 0.7)
+    }
+    .carousel-indicators li {
+        background-color: #fff;
+    }
+}
+@media(min-width:567px){
+    .activites .carousel-item img{
+        height:500px;
+        width:100%;
+    }
+    .trapozoid {
+        border-bottom: 500px solid #1663f1;
+        border-right: 0px solid transparent;
+        border-left: 250px solid transparent;
+        width: 70%;
+        bottom: 500px;
+        left: 30%;
+    }
+    .carousel-caption {
+        position: absolute;
+        top: 30%;
+        left: 60vw;
+        width: 30%;
+    }
+}
+@media(min-width:768px){
+    .trapozoid {
+        border-left: 220px solid transparent;
+        width: 60%;
+        left: 40%;
+    }
+    .carousel-caption {
+        width: 30%;
+        top: 35%;
+        left: 60vw;
+    }
+}
+@media(min-width:992px){
+    .trapozoid {
+        border-left: 190px solid transparent;
+        width: 50%;
+        left: 50%;
+    }
+    .activites .carousel-item img{
+        height:500px;
+        width:70%;
+    }
+}
+
+
+
+
+.contact-us{
+    margin: auto;
+    margin-bottom: 50px;
+}
+.contact-us label, .contact-us input{
+    display: block;
+}
+.contact-us .instructions{
+    border-right: 1px solid black;
+}
+.contact-us .instructions h2{
+    color: #1663f1;
+}
+.contact-us form input{
+    width: 220px;
+    height: 30px;
+    border: 1px solid black;
+    padding: 10px;
+    float: left;
+}
+.contact-us form #message{
+    height: 77.5%;
+    width: 100%;
+    border: 1px solid black;
+    padding: 10px;
+    float: left;
+    resize: none;
+}
+.contact-us i{
+    font-size: 35px;
+    margin-right: 10px;
+}
+.contact-data h2{
+    margin-top: 20px;
+}
+.fa-facebook-square{
+    color: #3b5998;
+}
+.fa-twitter-square{
+    color: #00acee;
+}
+.fa-patreon{
+    color: #ff424d
+}
+.instagram{
+    width:38px;
+    height:38px;
+    margin-right: 10px;
+    vertical-align: bottom
+}
+
+footer{
+    width:100%;
+    background-color: black;
+    text-align: center;
+    padding: 20px;
+}
+footer p{
+    color: white;
+    margin: 0px;
+}
+
+
+
+
+
+
+
+
+
+
+
+@media(max-width:768px){
+    .navCntnt-sm{
+        display: block;
+    }
+    .navCntnt{
+        display: none;
+    }
+    .contact-us .instructions{
+        border-right: none;
+    }
+}
+@media(max-width:567px){
+    .card-container{
+        margin-left: auto;
+        margin-right: auto;
+    }
+    header{
+        padding-top: 100px
+    }
+    header h1{
+        font-size: 36px;
+    }
+    .card-body h2{
+        font-size: 25px;
+    }
+}
